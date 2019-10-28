@@ -62,12 +62,17 @@
 
 	function playVid() { 
 		console.log("Play Video")
-		// Play the video and update the volume.
+		// if (video.paused) {
+		video.play();
+		console.log(video.volume);
+		// }
 	} 
 
 	function pauseVid() { 
 		console.log("Pause Video")
-	  	// Play the video.
+	  	if (video.paused) == false {
+			video.pause();
+		}
 	} 
 
 	function slowSpeed() {
